@@ -1,4 +1,3 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 
 
@@ -14,6 +13,4 @@ from django.shortcuts import render
 
 
 def get_phone_number_view(request):
-    phone_number = '+79848522383'
-
-    return HttpResponse(phone_number)  # код писать тут
+    return render(request, 'phone_number.html')
