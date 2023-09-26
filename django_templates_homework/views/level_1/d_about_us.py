@@ -20,6 +20,6 @@ def about_us_view(request):
 
     return render(
         request,
-        'about_us.html',
+        'level_1/about_us.html',
         context={'company_name': company_name, 'work_from_year': work_from_year},
     )
