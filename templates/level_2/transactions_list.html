@@ -14,7 +14,7 @@
   <body>
     <main class="container">
       <article>
-        <h2>5 transactions to review</h2>
+        <h2>{{ transactions|length }} transactions to review</h2>
         <table>
           <thead>
             <tr>
@@ -35,7 +35,6 @@
               <td>{% if transaction.can_be_fraud %}❌{% else %}✅{% endif %}</td>
             </tr>
           {% endfor %}
-
           </tbody>
         </table>
       </article>
